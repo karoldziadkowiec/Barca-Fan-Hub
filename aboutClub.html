@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Barça Fan Hub - About club</title>
+	<meta name="description" content="Barça Fan Hub |  detailed information about the club. News, successes, history, and match reports.">
+	<meta name="keywords" content="Barça Fan Hub, Barca, FC Barcelona, Barcelona, La Liga, results, history, news" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+    <script>
+        jQuery(function($) {
+            // Reset scroll
+            $.scrollTo(0);
+
+            $('.scrollUp').click(function() {
+                $.scrollTo($('body'), 500);
+            });
+            
+        });
+
+        // Show below
+        $(window).scroll(function() {
+            if($(this).scrollTop()>300) 
+                $('.scrollUp').fadeIn();
+            else
+            $('.scrollUp').fadeOut();
+        }
+        );
+    </script>
+</head>
+
+<body>
+
+    <header>
+
+        <a href="#" class="scrollUp"></a>
+
+        <h1 class="logo">Barça Fan Hub</h1>
+
+        <nav>
+
+            <ul class="bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="season.html">Season</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="aboutClub.html" class="AfterClick">About club</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+    
+    <main>
+
+        <article>
+
+            <section id="section_info">
+
+                <div class="Information">
+
+                    <header>
+                        <div class="red_label">About club</div>
+                        <p>Detailed information about the club</p>
+                        <div id="crest">
+                            <img src="img/logo.png" alt="Barca crest">
+                        </div>
+                        <div class="yellow_label">FC Barcelona</div>
+                    </header>
+
+                    <div class="info">
+
+                        <div class="info_txt">
+                            <div class="blue_label">Full name</div>
+                            <p>Futbol Club Barcelona</p>
+                        </div>
+
+                        <div class="info_txt">
+                            <div class="blue_label">Nickname(s)</div>
+                            <p>Barça/Blaugrana/Culers/Barcelonistes/Blaugranes/Azulgranas</p>
+                        </div>
+
+                        <div class="info_txt">
+                            <div class="blue_label">Founded</div>
+                            <p>	29 November 1899; 123 years ago</p>
+                        </div>
+
+                        <div class="info_txt">
+                            <div class="blue_label">Stadium</div>
+                            <p>Camp Nou, Capacity: 99 354</p>
+                            <p>Opened: 24.09.1957</p>
+                        </div>
+
+                        <div class="info_txt">
+                            <div class="blue_label">President</div>
+                            <p>Joan Laporta</p>
+                        </div>
+
+                        <div class="info_txt">
+                            <div class="blue_label">Head coach</div>
+                            <p>Xavi</p>
+                        </div>
+
+                        <div class="info_txt">
+                            <div class="blue_label">League</div>
+                            <p>La Liga</p>
+                        </div>
+
+                        <div class="info_txt">
+                            <div class="blue_label">Colors</div>
+                            <p>Blue-Red</p>
+                        </div>
+
+                        <div class="info_txt">
+                            <div class="blue_label">77 Trophies:</div>
+                            <p>27 La Liga, 31 Copa del Rey, 14 Supercopa de España, three Copa Eva Duarte, and two Copa de la Liga titles, as well as being the record holder for the latter four competitions. In international club football, the club has won 22 European and worldwide titles: five UEFA Champions League titles, a record four UEFA Cup Winners' Cups, a joint record five UEFA Super Cups, a record three Inter-Cities Fairs Cups, a joint record two Latin Cups, and three FIFA Club World Cups. Barcelona was ranked first in the International Federation of Football History & Statistics Club World Ranking for 1997, 2009, 2011, 2012 and 2015, and occupies the ninth position on the UEFA club rankings as of May 2023.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </article>
+
+    </main>
+
+    <footer>
+
+        <section>
+            
+            <div class="socials">
+
+                <header>
+                    <div class="red_label">Our social media</div>
+                    <p>See more and follow FC Barcelona on our social media.</p>
+                </header>
+
+                <a href="https://www.facebook.com/fcbarcelona/?locale=pl_PL" class="fb">
+                    <img src="img/fb.png" alt="Fb">
+                    <span>Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/fcbarcelona/" class="ig">
+                    <img src="img/ig.png" alt="Ig">
+                    Instagram
+                </a>
+                <a href="https://twitter.com/FCBarcelona?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="x">
+                    <img src="img/x.jpg" alt="X">
+                    X
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <div id="aboutme">Website created by &copy Karol Dziadkowiec</div>
+        </section>
+
+    </footer>
+    
+</body>
+</html>

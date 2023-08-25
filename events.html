@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Barça Fan Hub - Events</title>
+	<meta name="description" content="Barça Fan Hub |  detailed information about the club. News, successes, history, and match reports.">
+	<meta name="keywords" content="Barça Fan Hub, Barca, FC Barcelona, Barcelona, La Liga, results, history, news" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+    <script>
+        jQuery(function($) {
+            // Reset scroll
+            $.scrollTo(0);
+
+            $('.scrollUp').click(function() {
+                $.scrollTo($('body'), 500);
+            });
+            
+        });
+
+        // Show below
+        $(window).scroll(function() {
+            if($(this).scrollTop()>300) 
+                $('.scrollUp').fadeIn();
+            else
+            $('.scrollUp').fadeOut();
+        }
+        );
+    </script>
+</head>
+
+<body>
+
+    <header>
+
+        <a href="#" class="scrollUp"></a>
+
+        <h1 class="logo">Barça Fan Hub</h1>
+
+        <nav>
+
+            <ul class="bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="season.html">Season</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="aboutClub.html">About club</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="events.html" class="AfterClick">Events</a></li>
+            </ul>
+
+            <div class="welcome">
+
+                <header>
+                    <div class="red_label">Events</div>
+                    <p>Win a match ticket for FC Barcelona – Real Madrid!</p> 
+                    <p>Camp Nou, Barcelona - 29.10.2023</p>
+                    <p>Register in the form below and try to win a ticket for El-Clasico.</p>
+                    <p>We will contact the drawn person personally by e-mail.</p>
+                    <div id="team">
+                        <img src="img/barcaVSreal.jpg" alt="Teams Photo">
+                    </div>
+                </header>
+                
+            </div>
+
+        </nav>
+
+    </header>
+    
+    <main>
+
+        <article>
+
+            <section id="section_events">
+
+                <div class="events">
+
+                    <header>
+                        <div class="red_label">Event form</div>
+                    </header>
+
+                        <div class="event">
+
+                            <form action="events_after.html" method="post">
+
+                                <div class="event_txt">
+                                    <legend>Basic data</legend>
+                                    <div><label>Name<input type="text" name="name" required></label></div>
+                                    <div><label>Surname<input type="text" name="surname" required></label></div>
+                                    <div><label>E-mail<input type="email" name="email" placeholder="e.g. LeoMessi@fcb.com" required></label></div>
+                                    <div><label>Phone number<input type="tel" name="phone_number"  placeholder="e.g. +48 123 456 789" required></label></div>
+                                    <div><label>Nationality<input type="text" name="nationality" placeholder="e.g. English" required></label></div>
+                                </div>
+
+                                <div class="event_txt">
+                                    <legend>Gender</legend>
+                                    <div><label><input type="radio" value="1" name="gender">Man</label></div>
+                                    <div><label><input type="radio" value="2"name="gender">Woman</label></div>
+                                    <div><label><input type="radio" value="3"name="gender">Other</label></div>
+                                </div>
+
+                                <div class="event_txt">
+                                    <legend>Age range</legend>
+                                    <select id="age_range" name="age_range">
+                                        <option value="child">&lt 16</option>
+                                        <option value="ok">16-18</option>
+                                        <option value="adult">&gt 18</option>
+                                    </select>
+                                </div>
+
+                                <div class="event_txt">
+                                    <legend>English language level</legend>
+                                    <div><label><input type="radio" value="1"name="language_level">lack</label></div>
+                                    <div><label><input type="radio" value="2" name="language_level">beginner</label></div>
+                                    <div><label><input type="radio" value="3"name="language_level">intermediate</label></div>
+                                    <div><label><input type="radio" value="4"name="language_level">advanced</label></div>
+                                    <div><label><input type="radio" value="5"name="language_level">fluent</label></div>
+                                </div>
+
+                                <div class="event_txt">
+                                    <legend>Do you know Spanish?</legend>
+                                    <select id="spanish_level" name="spanish_level">
+                                        <option value="yes">Yes</option>
+                                        <option value="no" selected>No</option>
+                                    </select>
+                                </div>
+
+                                <div class="event_txt">
+                                    <legend>How many times have you been to a FC Barcelona match?</legend>
+                                    <div><label><input type="number" name="numbers" step="1" required>time/s</label></div>
+                                </div>
+
+                                <div class="event_txt">
+                                    <legend>Write, why you should win a match ticket</legend>
+                                    <div><textarea name="comment" id="comment" rows="6" cols="70" maxlength="300" required></textarea></div>
+                                </div>
+
+                                <div class="event_txt">
+                                    <legend>Acceptance of the contest rules</legend>
+                                    <div><label><input type="checkbox" value="accept" name="acceptance" required>I accept the terms of the contest.</label></div>
+                                </div>
+
+                                <div class="event_txt">
+                                    <div><label><input type="submit" name="submit" value="Send a request"></label></div>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                </div>
+
+            </section>
+
+        </article>
+
+    </main>
+
+    <footer>
+
+        <section>
+            
+            <div class="socials">
+
+                <header>
+                    <div class="red_label">Our social media</div>
+                    <p>See more and follow FC Barcelona on our social media.</p>
+                </header>
+
+                <a href="https://www.facebook.com/fcbarcelona/?locale=pl_PL" class="fb">
+                    <img src="img/fb.png" alt="Fb">
+                    <span>Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/fcbarcelona/" class="ig">
+                    <img src="img/ig.png" alt="Ig">
+                    Instagram
+                </a>
+                <a href="https://twitter.com/FCBarcelona?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="x">
+                    <img src="img/x.jpg" alt="X">
+                    X
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <div id="aboutme">Website created by &copy Karol Dziadkowiec</div>
+        </section>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Barça Fan Hub - Events</title>
+	<meta name="description" content="Barça Fan Hub |  detailed information about the club. News, successes, history, and match reports.">
+	<meta name="keywords" content="Barça Fan Hub, Barca, FC Barcelona, Barcelona, La Liga, results, history, news" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+    <script>
+        jQuery(function($) {
+            // Reset scroll
+            $.scrollTo(0);
+
+            $('.scrollUp').click(function() {
+                $.scrollTo($('body'), 500);
+            });
+            
+        });
+
+        // Show below
+        $(window).scroll(function() {
+            if($(this).scrollTop()>300) 
+                $('.scrollUp').fadeIn();
+            else
+            $('.scrollUp').fadeOut();
+        }
+        );
+    </script>
+</head>
+
+<body>
+
+    <header>
+
+        <a href="#" class="scrollUp"></a>
+
+        <h1 class="logo">Barça Fan Hub</h1>
+
+        <nav>
+
+            <ul class="bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="season.html">Season</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="aboutClub.html">About club</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="events.html" class="AfterClick">Events</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+    
+    <main>
+
+        <article>
+
+            <section id="section_events_after">
+
+                <div class="welcome">
+
+                    <header>
+                        <div class="red_label">Thank you, your request has been sent!</div>
+                        <p>We will contact the drawn person personally by e-mail.</p>
+                        <p>FC Barcelona – Real Madrid</p> 
+                        <p>Camp Nou, Barcelona - 29.10.2023</p>
+                        <div id="team">
+                            <img src="img/barcaVSreal.jpg" alt="Teams Photo">
+                        </div>
+                    </header>
+                    
+                </div>
+
+            </section>
+
+        </article>
+
+    </main>
+
+    <footer>
+
+        <section>
+            
+            <div class="socials">
+
+                <header>
+                    <div class="red_label">Our social media</div>
+                    <p>See more and follow FC Barcelona on our social media.</p>
+                </header>
+
+                <a href="https://www.facebook.com/fcbarcelona/?locale=pl_PL" class="fb">
+                    <img src="img/fb.png" alt="Fb">
+                    <span>Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/fcbarcelona/" class="ig">
+                    <img src="img/ig.png" alt="Ig">
+                    Instagram
+                </a>
+                <a href="https://twitter.com/FCBarcelona?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="x">
+                    <img src="img/x.jpg" alt="X">
+                    X
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <div id="aboutme">Website created by &copy Karol Dziadkowiec</div>
+        </section>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Barça Fan Hub - News</title>
+	<meta name="description" content="Barça Fan Hub |  detailed information about the club. News, successes, history, and match reports.">
+	<meta name="keywords" content="Barça Fan Hub, Barca, FC Barcelona, Barcelona, La Liga, results, history, news" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" type="text/css"/>
+    <script src="timer.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+    <script>
+        jQuery(function($) {
+            // Reset scroll
+            $.scrollTo(0);
+
+            $('.scrollUp').click(function() {
+                $.scrollTo($('body'), 500);
+            });
+            
+        });
+
+        // Show below
+        $(window).scroll(function() {
+            if($(this).scrollTop()>300) 
+                $('.scrollUp').fadeIn();
+            else
+            $('.scrollUp').fadeOut();
+        }
+        );
+    </script>
+</head>
+
+<body onload="counting();">
+
+    <header>
+
+        <a href="#" class="scrollUp"></a>
+
+        <h1 class="logo">Barça Fan Hub</h1>
+
+        <nav>
+
+            <ul class="bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html" class="AfterClick">News</a></li>
+                <li><a href="season.html">Season</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="aboutClub.html">About club</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+    
+    <main>
+
+        <article>
+
+            <section id="section_news">
+
+                <div class="entries">
+
+                    <header>
+                        <div class="red_label">News</div>
+                        <p>See current news from FC Barcelona on day</p>
+                        <div id="date">date</div>
+                    </header>
+
+                    <div class="news">
+
+                        <div class="news_img">
+                            <img src="img/news1.jpg" alt="News1">
+                        </div>
+                        <div class="news_txt">
+                            <div class="blue_label">FC BARCELONA BEATED CADIZ IN PRIMERA DIVISION 2nd MATCH</div>
+                            <p>This is not the dream start of the season for Barcelona. Robert Lewandowski's club, after a poor game in the first round of the Primera Division, did not perform much better in the second, but this time at least they won. The Spanish champions managed to beat Cadiz 2-0. The Pole recorded an assist on the second goal.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="news">
+
+                        <div class="news_img">
+                            <img src="img/news2.jpg" alt="News2">
+                        </div>
+                        <div class="news_txt">
+                            <div class="blue_label">XAVI'S CONTRACT RENEWED IN SEPTEMBER</div>
+                            <p>FC Barcelona coach Xavi Hernández told the press conference ahead of the match against Cádiz that the extension of his contract was going very well, but did not give any more details. The coach does not want to talk about it because he understands that it is not the most important thing at the moment, but everything seems to indicate that the renewal of the contract will take place in September.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="news">
+
+                        <div class="news_img">
+                            <img src="img/news3.jpg" alt="News3">
+                        </div>
+                        <div class="news_txt">
+                            <div class="blue_label">MEDIA: CANCELO PLANS TO FLY TO BARCELONA TOMORROW</div>
+                            <p>Joao Cancelo's loan deal from Manchester City is set to be finalized in the coming hours. Cadena SER's Adria Albets reveals details of his deal with The Citizens on "Que t'hi Jugues" and announces when the Portuguese will arrive in Barcelona.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="news">
+
+                        <div class="news_img">
+                            <img src="img/news4.jpg" alt="News4">
+                        </div>
+                        <div class="news_txt">
+                            <div class="blue_label">XAVI FURIOUS WITH REFEREE AFTER BARCELONA V GETAFE MATCH. "IT'S AN ABSOLUTE DISGRACE"</div>
+                            <p>Barcelona drew 0-0 away to Getafe, and the match was not without controversy. The referee showed a total of three red cards, including one to Xavi Hernandez. – The match got out of control of the referee – said the coach of the Spanish champions after the match.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="news">
+
+                        <div class="news_img">
+                            <img src="img/news5.jpg" alt="News5">
+                        </div>
+                        <div class="news_txt">
+                            <div class="blue_label">SERGI ROBERTO TURNED DOWN AN OFFER FROM SAUDI ARABIA</div>
+                            <p>As reported by David Bernabéu in the Sport daily, in recent days one of the Saudi clubs tempted Sergi Roberto to leave Blaugrana and join his ranks. Barça have given the player complete freedom to listen to the offer, but the captain prefers to fulfill his one-year contract with the club.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="news">
+
+                        <div class="news_img">
+                            <img src="img/news6.jpg" alt="News6">
+                        </div>
+                        <div class="news_txt">
+                            <div class="blue_label">BARCELONA OPEN TO LOAN CLEMENT LENGLET</div>
+                            <p>The constantly dragging topic of selling Clement Lenglet makes Barcelona look for different solutions to the Frenchman's situation. Sport's Luis Miguelsanz reports that the club is opening up to a defender on loan.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="news">
+
+                        <div class="news_img">
+                            <img src="img/news7.jpg" alt="News7">
+                        </div>
+                        <div class="news_txt">
+                            <div class="blue_label">YUSUF DEMIR CHANGED CLUBS AGAIN</div>
+                            <p>Yusuf Demir changes clubs again. The Austrian will be on loan at FC Basel from this season. Not so long ago, Barcelona brought in a teenage right winger with a patch of great talent, but his stage in the Catalan capital ended very quickly.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="news">
+
+                        <div class="news_img">
+                            <img src="img/news8.jpg" alt="News8">
+                        </div>
+                        <div class="news_txt">
+                            <div class="blue_label">OFFICIAL: RONALD ARAUJO INJURED</div>
+                            <p>FC Barcelona has officially announced that Ronald Araujo suffered a hamstring injury in his left thigh during training. The Uruguayan will therefore not play against Cádiz. The club did not provide the defender's pause time.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </article>
+
+    </main>
+
+    <footer>
+
+        <section>
+            
+            <div class="socials">
+
+                <header>
+                    <div class="red_label">Our social media</div>
+                    <p>See more and follow FC Barcelona on our social media.</p>
+                </header>
+
+                <a href="https://www.facebook.com/fcbarcelona/?locale=pl_PL" class="fb">
+                    <img src="img/fb.png" alt="Fb">
+                    <span>Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/fcbarcelona/" class="ig">
+                    <img src="img/ig.png" alt="Ig">
+                    Instagram
+                </a>
+                <a href="https://twitter.com/FCBarcelona?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="x">
+                    <img src="img/x.jpg" alt="X">
+                    X
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <div id="aboutme">Website created by &copy Karol Dziadkowiec</div>
+        </section>
+
+    </footer>
+
+</body>
+</html>

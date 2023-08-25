@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Barça Fan Hub - Season 2023/2024</title>
+	<meta name="description" content="Barça Fan Hub |  detailed information about the club. News, successes, history, and match reports.">
+	<meta name="keywords" content="Barça Fan Hub, Barca, FC Barcelona, Barcelona, La Liga, results, history, news" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+    <script>
+        jQuery(function($) {
+            // Reset scroll
+            $.scrollTo(0);
+
+            for (let i = 1; i <= 3; i++) {
+                $('#link' + i).click(function() {
+                $.scrollTo($('#Game' + i), 1000);
+            });
+            }
+
+            $('.scrollUp').click(function() {
+                $.scrollTo($('body'), 500);
+            });
+            
+        });
+
+        // Show below
+        $(window).scroll(function() {
+            if($(this).scrollTop()>300) 
+                $('.scrollUp').fadeIn();
+            else
+            $('.scrollUp').fadeOut();
+        }
+        );
+    </script>
+</head>
+
+<body>
+
+    <header>
+
+        <a href="#" class="scrollUp"></a>
+
+        <h1 class="logo">Barça Fan Hub</h1>
+
+        <nav>
+
+            <ul class="bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="season.html" class="AfterClick">Season</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="aboutClub.html">About club</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+
+            <div class="welcome">
+
+                <header>
+                    <div class="red_label">FC Barcelona schedule - 2023/2024</div>
+                    <p>Find out more about the matches for the 2023/2024 season</p>
+                </header>
+                
+            </div>
+
+            <ul class="typeOf">
+                <li><a id="link1" href = "#" class="tilelink">La Liga</a></li>
+                <li><a id="link2" href = "#" class="tilelink">Champions League</a></li>
+                <li><a id="link3" href = "#" class="tilelink">Copa del Rey</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+    
+    <main>
+
+        <article>
+
+            <section id="section_games">
+
+                <div class="games">
+
+                    <header>
+                        <div class="red_label" id="Game1">La Liga</div>
+                        <div id="crest">
+                            <img src="img/laliga.png" alt="La Liga crest">
+                        </div>
+                    </header>
+
+                    <div class="matches">
+
+                        <div class="match_txt">
+                            <div class="yellow_label">AUTUMN ROUND [2023]</div>
+                            <div class="blue_label">13.08.2023</div>
+                            <p>Getafe 0–0 FC Barcelona</p>
+                            <div class="blue_label">20.08.2023</div>
+                            <p>FC Barcelona 2–0 Cádiz</p>
+                            <div class="blue_label">27.08.2023</div>
+                            <p>Villareal  – FC Barcelona</p>
+                            <div class="blue_label">03.09.2023</div>
+                            <p>Osasuna – FC Barcelona</p>
+                            <div class="blue_label">17.09.2023</div>
+                            <p>FC Barcelona – Real Betis</p>
+                            <div class="blue_label">24.09.2023</div>
+                            <p>FC Barcelona – Celta de Vigo</p>
+                            <div class="blue_label">27.09.2023</div>
+                            <p>Mallorca – FC Barcelona</p>
+                            <div class="blue_label">01.10.2023</div>
+                            <p>FC Barcelona – Sevilla</p>
+                            <div class="blue_label">08.10.2023</div>
+                            <p>Granada – FC Barcelona</p>
+                            <div class="blue_label">22.10.2023</div>
+                            <p>FC Barcelona – Athletic Club</p>
+                            <div class="blue_label">29.10.2023</div>
+                            <p>FC Barcelona – Real Madrid</p>
+                            <div class="blue_label">05.11.2023</div>
+                            <p>Real Sociedad – FC Barcelona</p>
+                            <div class="blue_label">12.11.2023</div>
+                            <p>FC Barcelona – Alavés</p>
+                            <div class="blue_label">26.11.2023</div>
+                            <p>Rayo Vallecano – FC Barcelona</p>
+                            <div class="blue_label">03.12.2023</div>
+                            <p>FC Barcelona – Atlético Madrid</p>
+                            <div class="blue_label">10.12.2023</div>
+                            <p>FC Barcelona – Girona</p>
+                            <div class="blue_label">17.12.2023</div>
+                            <p>Valencia – FC Barcelona</p>
+                            <div class="blue_label">20.12.2023</div>
+                            <p>FC Barcelona – Almería</p>
+                            <div class="blue_label">03.01.2024</div>
+                            <p>Las Palmas – FC Barcelona</p><br/>
+                            <div class="yellow_label">SPRING ROUND [2024]</div>
+                            <div class="blue_label">14.01.2024</div>
+                            <p>FC Barcelona – Osasuna</p>
+                            <div class="blue_label">21.01.2024</div>
+                            <p>Real Betis – FC Barcelona</p>
+                            <div class="blue_label">28.01.2024</div>
+                            <p>FC Barcelona – Villareal</p>
+                            <div class="blue_label">04.02.2024</div>
+                            <p>Alavés – FC Barcelona</p>
+                            <div class="blue_label">11.02.2024</div>
+                            <p>FC Barcelona – Granada</p>
+                            <div class="blue_label">18.02.2024</div>
+                            <p>Celta de Vigo – FC Barcelona</p>
+                            <div class="blue_label">25.02.2024</div>
+                            <p>FC Barcelona – Getafe</p>
+                            <div class="blue_label">03.03.2024</div>
+                            <p>Athletic Club – FC Barcelona</p>
+                            <div class="blue_label">10.03.2024</div>
+                            <p>FC Barcelona – Mallorca</p>
+                            <div class="blue_label">17.03.2024</div>
+                            <p>Atlético Madrid – FC Barcelona</p>
+                            <div class="blue_label">31.03.2024</div>
+                            <p>FC Barcelona – Las Palmas</p>
+                            <div class="blue_label">14.04.2024</div>
+                            <p>Cádiz – FC Barcelona</p>
+                            <div class="blue_label">21.04.2024</div>
+                            <p>Real Madrid – FC Barcelona</p>
+                            <div class="blue_label">28.04.2024</div>
+                            <p>FC Barcelona – Valencia</p>
+                            <div class="blue_label">05.05.2024</div>
+                            <p>Girona – FC Barcelona</p>
+                            <div class="blue_label">12.05.2024</div>
+                            <p>FC Barcelona – Real Sociedad</p>
+                            <div class="blue_label">15.05.2024</div>
+                            <p>Almería – FC Barcelona</p>
+                            <div class="blue_label">19.05.2024</div>
+                            <p>FC Barcelona – Rayo Vallecano</p>
+                            <div class="blue_label">26.05.2024</div>
+                            <p>Sevilla – FC Barcelona</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section>
+
+                <div class="games">
+
+                    <header>
+                        <div class="red_label" id="Game2">Champions League</div>
+                        <div id="crest">
+                            <img src="img/cl.png" alt="Champions League crest">
+                        </div>
+                    </header>
+
+                    <div class="matches">
+
+                        <div class="match_txt">
+                            <div class="blue_label">19-20.09.2023</div>
+                            <p>1. match in group</p>
+                            <div class="blue_label">3-4.10.2023</div>
+                            <p>2. match in group</p>
+                            <div class="blue_label">24-25.10.2023</div>
+                            <p>3. match in group</p>
+                            <div class="blue_label">7-8.11.2023</div>
+                            <p>4. match in group</p>
+                            <div class="blue_label">28-29.11.2023 </div>
+                            <p>5. match in group</p>
+                            <div class="blue_label">12-13.12.2023</div>
+                            <p>6. match in group</p>
+                            <div class="blue_label">13/14/20/21.02.2024 – 5/6/12/13.03.2024</div>
+                            <p>1/8 of final</p>
+                            <div class="blue_label">9/10.04.2024 – 16/17.04.2024</div>
+                            <p>1/4 of final</p>
+                            <div class="blue_label">30.04/01.05.2024 – 7/8.05.2024</div>
+                            <p>1/2 of final</p>
+                            <div class="blue_label">1.06.2024</div>
+                            <p>Final</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="section_games">
+
+                <div class="games">
+
+                    <header>
+                        <div class="red_label" id="Game3">Copa del Rey</div>
+                        <div id="crest">
+                            <img src="img/cdr.png" alt="Copa del Rey crest">
+                        </div>
+                    </header>
+
+                    <div class="matches">
+
+                        <div class="match_txt">
+                            <div class="blue_label">11.10.2023</div>
+                            <p>First round</p>
+                            <div class="blue_label">06.12.2023</div>
+                            <p>Second round</p>
+                            <div class="blue_label">06.01.2024</div>
+                            <p>Third round</p>
+                            <div class="blue_label">07.01.2024</div>
+                            <p>1/16 of final</p>
+                            <div class="blue_label">24.01.2024</div>
+                            <p>1/8 of final</p>
+                            <div class="blue_label">31.01.2024</div>
+                            <p>1/4 of final</p>
+                            <div class="blue_label">07.02.2024</div>
+                            <p>1/2 of final</p>
+                            <div class="blue_label">06.04.2024</div>
+                            <p>Final</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </article>
+
+    </main>
+
+    <footer>
+
+        <section>
+            
+            <div class="socials">
+
+                <header>
+                    <div class="red_label">Our social media</div>
+                    <p>See more and follow FC Barcelona on our social media.</p>
+                </header>
+
+                <a href="https://www.facebook.com/fcbarcelona/?locale=pl_PL" class="fb">
+                    <img src="img/fb.png" alt="Fb">
+                    <span>Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/fcbarcelona/" class="ig">
+                    <img src="img/ig.png" alt="Ig">
+                    Instagram
+                </a>
+                <a href="https://twitter.com/FCBarcelona?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="x">
+                    <img src="img/x.jpg" alt="X">
+                    X
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <div id="aboutme">Website created by &copy Karol Dziadkowiec</div>
+        </section>
+
+    </footer>
+
+</body>
+</html>
